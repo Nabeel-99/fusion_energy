@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-[#bd742f] p-20 lg:px-20 text-white flex lg:flex-row flex-col gap-10 items-start lg:items-baseline justify-around ">
-      <div className="2xl:container 2xl:mx-auto text-white flex lg:flex-row flex-col gap-10 items-start lg:items-baseline justify-around">
-        <div className="font-satoshi-bold flex gap-4 flex-col items-center lg:items-baseline text-xl">
+      <div className="2xl:container 2xl:mx-auto flex w-full justify-around lg:flex-row flex-col gap-10">
+        <div className="font-satoshi-bold flex gap-4 flex-col items-start  lg:items-center  text-xl">
           UFI Solutions
           <div className="text-center">
             <FaInstagram className="text-3xl" />
