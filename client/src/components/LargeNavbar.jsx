@@ -6,7 +6,9 @@ const LargeNavbar = () => {
     <>
       <div className="hidden lg:flex">
         {" "}
-        <Link to={"/"}>UFI Solutions</Link>
+        <Link to={"/"} className="text-2xl">
+          UFI Solutions
+        </Link>
       </div>
       <div className=" gap-6 hidden lg:flex">
         <ul className="flex gap-10 ">

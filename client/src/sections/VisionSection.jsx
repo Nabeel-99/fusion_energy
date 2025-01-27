@@ -2,7 +2,7 @@ import React from "react";
 import ImageOne from "../assets/images/service.jpg";
 const VisionSection = () => {
   return (
-    <div className="flex lg:flex-row flex-col lg:px-20 w-full justify-around pt-4  lg:pt-20 gap-10">
+    <div className="flex lg:flex-row flex-col lg:px-32 w-full justify-around pt-4  lg:pt-20 gap-10">
       <div className="lg:w-1/2 ">
         <img
           src={ImageOne}

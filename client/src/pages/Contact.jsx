@@ -7,7 +7,7 @@ import FrequentlyAskedSection from "../sections/FrequentlyAskedSection";
 const Contact = () => {
   return (
     <div className="flex flex-col bg-[#f4f4f4] gap-10  pt-20">
-      <div className="flex lg:flex-row flex-col gap-10  px-6 lg:px-20">
+      <div className="flex lg:flex-row flex-col gap-10 2xl:container 2xl:mx-auto  px-6 lg:px-20">
         <div className="flex flex-col gap-4">
           <p className="font-satoshi-bold text-3xl lg:text-7xl tracking-tight">
             Get In Touch with Us

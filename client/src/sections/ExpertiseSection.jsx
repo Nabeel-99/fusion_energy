@@ -6,9 +6,9 @@ import BulletPoint from "../components/BulletPoint";
 const ExpertiseSection = () => {
   return (
     <div className="flex lg:flex-row flex-col  pb-10 bg-[#f6f2ec] w-full justify-between pt-4  lg:pt-20 gap-10">
-      <div className="2xl:container 2xl:mx-auto flex flex-col lg:flex-row gap-10 pt-20 pb-10 justify-between w-full">
+      <div className="2xl:container 2xl:mx-auto px-2 flex flex-col lg:flex-row gap-10 pt-20 pb-10 justify-between w-full">
         <div className="w-full flex flex-col gap-10 lg:w-1/2  ">
-          <div className="flex px-10 flex-col items-center lg:items-baseline gap-4">
+          <div className="flex lg:px-20 flex-col items-center lg:items-baseline gap-4">
             <img
               src={ExpertOne}
               alt=""
@@ -28,7 +28,7 @@ const ExpertiseSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 px-4 lg:px-0 w-full  lg:w-1/2 ">
+        <div className="flex flex-col gap-4 px-4 lg:pr-20 w-full  lg:w-1/2 ">
           <p className="text-3xl lg:text-5xl font-satoshi-bold text-left">
             Leading the Way in Solar Technology
           </p>

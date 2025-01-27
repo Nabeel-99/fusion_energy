@@ -7,12 +7,12 @@ const ChooseSection = () => {
     <div className="flex flex-col gap-10 bg-img-choose z-20 relative ">
       <div className="inset-0 absolute bg-black opacity-60" />
       <div className="2xl:container 2xl:mx-auto 2xl:overflow-hidden">
-        <div className="absolute text-white text-left flex flex-col lg:flex-row  gap-10 pt-22 lg:pt-20 px-10 lg:px-20 h-full   w-full 2xl:w-auto">
-          <div className="flex flex-col gap-4  lg:w-full">
+        <div className="absolute text-white text-left flex flex-col items-center justify-center   gap-14 pt-22 lg:pt-0 px-10 lg:px-20 h-full   w-full 2xl:w-auto">
+          <div className="flex flex-col items-center gap-10  lg:w-full">
             <p className="font-satoshi-bold text-4xl lg:text-7xl">
               Why Choose Us?
             </p>
-            <ul className="text-xl lg:text-3xl px-3 font-satoshi-bold flex flex-col gap-4">
+            <ul className="text-xl lg:text-3xl px-3 font-satoshi-bold flex flex-col items-start text-left  gap-4">
               <li className="flex items-center gap-4">
                 <span>
                   <GiCheckMark />
