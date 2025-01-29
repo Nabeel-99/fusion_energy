@@ -7,6 +7,7 @@ import { MdEngineering, MdSolarPower } from "react-icons/md";
 import FrequentlyAskedSection from "../sections/FrequentlyAskedSection";
 import ClientsSection from "../sections/ClientsSection";
 import ServiceCard from "../components/ServiceCard";
+import FadeInEffect from "../components/FadeInEffect";
 const Services = () => {
   const services = [
     {
@@ -73,29 +74,33 @@ const Services = () => {
   ];
   return (
     <div className="flex flex-col gap-6 lg:gap-10 pt-10 h-full  lg:px-0 lg:pb-20 pb-10 ">
-      <div className="flex flex-col gap-2 px-6">
-        <div className="text-center font-satoshi-bold tracking-tight text-3xl lg:text-6xl px-4 lg:px-10">
-          Powering Your Future{" "}
-          <span className="lg:block"> with Solar Solutions</span>
-        </div>
-        <p className="text-center  text-lg lg:text-xl">
-          From Installation to Maintenance – We’ve Got You Covered
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 px-6 lg:px-20 2xl:container 2xl:mx-auto">
-        {services.map((service) => (
-          <div className="border border-[#d6d5d5] shadow-md bg-white rounded-xl p-6">
-            <ServiceCard
-              icon={service.icon}
-              text={service.title}
-              text2={service.text}
-              showLink={true}
-              to={service.link}
-            />
+      <FadeInEffect translateY={50}>
+        <div className="flex flex-col gap-2 px-6">
+          <div className="text-center font-satoshi-bold tracking-tight text-3xl lg:text-6xl px-4 lg:px-10">
+            Powering Your Future{" "}
+            <span className="lg:block"> with Solar Solutions</span>
           </div>
-        ))}
-      </div>
+          <p className="text-center  text-lg lg:text-xl">
+            From Installation to Maintenance – We’ve Got You Covered
+          </p>
+        </div>
+      </FadeInEffect>
+      <FadeInEffect translateY={60} delay={0.6}>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 px-6 lg:px-20 2xl:container 2xl:mx-auto">
+          {services.map((service) => (
+            <div className="border border-[#d6d5d5] shadow-md bg-white rounded-xl p-6">
+              <ServiceCard
+                icon={service.icon}
+                text={service.title}
+                text2={service.text}
+                showLink={true}
+                to={service.link}
+              />
+            </div>
+          ))}
+        </div>
+      </FadeInEffect>
+
       <ClientsSection />
       <FrequentlyAskedSection />
     </div>

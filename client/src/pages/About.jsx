@@ -5,67 +5,117 @@ import { FaEye } from "react-icons/fa";
 import { GiBullseye } from "react-icons/gi";
 import { GiCheckMark } from "react-icons/gi";
 import ServiceCard from "../components/ServiceCard";
+import { motion } from "motion/react";
+import FadeInEffect from "../components/FadeInEffect";
 const About = () => {
   return (
     <div className="flex flex-col gap-10 w-full pt-20 pb-10 h-full">
-      <div className="flex flex-col  2xl:container 2xl:mx-auto  lg:flex-row justify-between gap-10 px-6 lg:px-20">
-        <div className="flex flex-col gap-4 lg:gap-2   lg:w-1/2">
-          <p className="text-4xl text-center lg:text-left lg:text-7xl font-satoshi-bold tracking-tight">
-            Who We Are
-          </p>
-          <p className="px-2 text-lg">
-            Fusion Energy Solutions is a trusted provider of cutting-edge solar
-            energy solutions, committed to driving energy independence and
-            sustainability. With expertise in residential, commercial, and
-            utility-scale projects, we aim to revolutionize the way the world
-            harnesses solar power.
-          </p>
-          <div className="flex flex-col gap-2 px-1">
-            <div className="text-xl font-satoshi-bold text-center lg:text-left">
-              Our Values
+      <FadeInEffect translateY={40}>
+        <div className="flex flex-col  2xl:container 2xl:mx-auto  lg:flex-row justify-between gap-10 px-6 lg:px-20">
+          <div className="flex flex-col gap-4 lg:gap-2   lg:w-1/2">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl text-center lg:text-left lg:text-7xl font-satoshi-bold tracking-tight"
+            >
+              Who We Are
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="px-2 text-lg"
+            >
+              Fusion Energy Solutions is a trusted provider of cutting-edge
+              solar energy solutions, committed to driving energy independence
+              and sustainability. With expertise in residential, commercial, and
+              utility-scale projects, we aim to revolutionize the way the world
+              harnesses solar power.
+            </motion.p>
+            <div className="flex flex-col gap-2 px-1">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="text-xl font-satoshi-bold text-center lg:text-left"
+              >
+                Our Values
+              </motion.div>
+              <ul className="text-lg lg:text-xl px-3 font-satoshi-bold flex flex-col gap-4">
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-4"
+                >
+                  <span>
+                    <GiCheckMark />
+                  </span>
+                  Expertise
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-4"
+                >
+                  {" "}
+                  <span>
+                    <GiCheckMark />
+                  </span>
+                  Quality Assurance
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-4"
+                >
+                  {" "}
+                  <span>
+                    <GiCheckMark />
+                  </span>
+                  Cost Efficiency
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-4"
+                >
+                  {" "}
+                  <span>
+                    <GiCheckMark />
+                  </span>
+                  Customer Support
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.9 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-4"
+                >
+                  {" "}
+                  <span>
+                    <GiCheckMark />
+                  </span>
+                  Sustainability Impact
+                </motion.li>
+              </ul>
             </div>
-            <ul className="text-lg lg:text-xl px-3 font-satoshi-bold flex flex-col gap-4">
-              <li className="flex items-center gap-4">
-                <span>
-                  <GiCheckMark />
-                </span>
-                Expertise
-              </li>
-              <li className="flex items-center gap-4">
-                {" "}
-                <span>
-                  <GiCheckMark />
-                </span>
-                Quality Assurance
-              </li>
-              <li className="flex items-center gap-4">
-                {" "}
-                <span>
-                  <GiCheckMark />
-                </span>
-                Cost Efficiency
-              </li>
-              <li className="flex items-center gap-4">
-                {" "}
-                <span>
-                  <GiCheckMark />
-                </span>
-                Customer Support
-              </li>
-              <li className="flex items-center gap-4">
-                {" "}
-                <span>
-                  <GiCheckMark />
-                </span>
-                Sustainability Impact
-              </li>
-            </ul>
+          </div>
+          <div className="lg:w-1/2 order-first lg:order-none">
+            <img src={Solar} alt="" className="object-cover rounded-xl" />
           </div>
         </div>
-        <div className="lg:w-1/2 order-first lg:order-none">
-          <img src={Solar} alt="" className="object-cover rounded-xl" />
-        </div>
-      </div>
+      </FadeInEffect>
       <div className="relative pt-20 lg:pt-0 w-full ">
         <img
           src={SolarPng}
@@ -74,7 +124,13 @@ const About = () => {
         />
         <div className="inset-0 absolute bg-gradient-to-t  from-white from-40% to-transparent " />
         <div className="absolute bottom-0 left-0 right-0   ">
-          <div className="grid lg:grid-cols-2 gap-10 px-6 lg:px-44   2xl:container 2xl:mx-auto ">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="grid lg:grid-cols-2 gap-10 px-6 lg:px-44   2xl:container 2xl:mx-auto "
+          >
             <div className="border border-[#dedede] shadow-md p-6 lg:p-10 rounded-xl bg-white">
               <ServiceCard
                 icon={
@@ -99,7 +155,7 @@ const About = () => {
                 centerIcon={true}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
