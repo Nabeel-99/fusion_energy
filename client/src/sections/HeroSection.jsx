@@ -24,8 +24,8 @@ const HeroSection = () => {
   };
   return (
     <div className="flex flex-col gap-10 bg-img z-0 relative ">
+      <div className="bg-img absolute inset-0" />
       <div className="inset-0 absolute bg-black opacity-70" />
-
       <motion.div
         initial="hidden"
         animate="visible"
@@ -54,13 +54,13 @@ const HeroSection = () => {
           >
             <Link
               to={"/services"}
-              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] text-white w-full lg:w-1/2 text-center rounded-xl"
+              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full lg:w-1/2 text-center rounded-xl"
             >
               Explore Services
             </Link>
             <Link
               to={"/contact"}
-              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] text-white w-full lg:w-1/2 text-center rounded-xl"
+              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full lg:w-1/2 text-center rounded-xl"
             >
               Contact Us
             </Link>

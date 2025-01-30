@@ -73,7 +73,7 @@ const ServiceSection = () => {
             >
               <Link
                 to={"/services"}
-                className="border border-[#dca26c] p-2 py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] text-white w-full px-10 text-center rounded-xl"
+                className="border border-[#dca26c] p-2 py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full px-10 text-center rounded-xl"
               >
                 View All Services
               </Link>

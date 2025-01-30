@@ -118,7 +118,7 @@ const ChooseSection = () => {
           >
             <Link
               to={"/contact"}
-              className="border bg-[#d4863e] w-full lg:w-auto 2xl:w-full text-center text-xl border-[#dca26c] rounded-xl p-3 font-satoshi-bold lg:text-2xl py-4 px-10"
+              className="border bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 w-full lg:w-auto 2xl:w-full text-center text-xl border-[#dca26c] rounded-xl p-3 font-satoshi-bold lg:text-2xl py-4 px-10"
             >
               Contact Us
             </Link>

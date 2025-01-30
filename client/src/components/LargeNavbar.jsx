@@ -6,7 +6,7 @@ const LargeNavbar = () => {
     <>
       <div className="hidden lg:flex">
         {" "}
-        <Link to={"/"} className="text-2xl">
+        <Link to={"/"} className="text-2xl px-6">
           UFI Solutions
         </Link>
       </div>
@@ -32,7 +32,7 @@ const LargeNavbar = () => {
       <div className="hidden lg:flex">
         <Link
           to={"/contact"}
-          className="border p-2 bg-[#d4863e] text-white rounded-lg"
+          className="border p-2 bg-[#d4863e] px-4 hover:bg-[#e1a356] transition duration-300 text-white rounded-lg"
         >
           Contact Us
         </Link>

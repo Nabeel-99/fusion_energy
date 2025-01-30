@@ -17,14 +17,28 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <span className="pb-4">Quick Links</span>
             <ul className="flex flex-col gap-2">
-              <Link to={"/"}>Home </Link>
-              <Link to={"/services"}>
+              <Link
+                to={"/"}
+                className="transition duration-300 hover:text-[#50392d]"
+              >
+                Home{" "}
+              </Link>
+              <Link
+                className="transition duration-300 hover:text-[#50392d]"
+                to={"/services"}
+              >
                 <li>Services</li>
               </Link>
-              <Link to={"/about"}>
+              <Link
+                className="transition duration-300 hover:text-[#50392d]"
+                to={"/about"}
+              >
                 <li>About</li>
               </Link>
-              <Link to={"/contact"}>
+              <Link
+                className="transition duration-300 hover:text-[#50392d]"
+                to={"/contact"}
+              >
                 <li>Contact Us</li>
               </Link>
             </ul>

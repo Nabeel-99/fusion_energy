@@ -30,13 +30,13 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-col gap-4"
             >
-              <Link className="border p-4 bg-[#dca26c] font-satoshi-bold text-white border-[#dca26c] rounded-lg">
+              <Link className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
                 Email: ufi@gmail.com
               </Link>
-              <div className="border p-4 bg-[#dca26c] font-satoshi-bold text-white border-[#dca26c] rounded-lg">
+              <div className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
                 Phone: +234 803 123 4567
               </div>
-              <div className="border p-4 bg-[#dca26c] font-satoshi-bold text-white border-[#dca26c] rounded-lg">
+              <div className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
                 Address: Wuse 2, Abuja.
               </div>
               <Link>
