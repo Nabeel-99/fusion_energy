@@ -56,7 +56,7 @@ const ServiceSection = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="text-lg"
+                className="text-lg lg:text-xl"
               >
                 Our company provides innovative solar energy solutions tailored
                 to meet the diverse needs of homes, businesses, and communities,

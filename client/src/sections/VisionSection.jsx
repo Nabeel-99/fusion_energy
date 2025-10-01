@@ -33,7 +33,7 @@ const VisionSection = () => {
         ref={sectionRef}
         className="flex lg:flex-row flex-col lg:px-32 w-full justify-around pt-4 lg:pt-20 gap-10"
       >
-        <div className="lg:w-1/2 ">
+        <div className="px-4 lg:px-0 lg:w-1/2 ">
           <img
             src={ImageOne}
             alt=""
@@ -52,7 +52,10 @@ const VisionSection = () => {
           >
             Our Vision and Mission
           </motion.div>
-          <motion.p variants={itemVariants} className="text-left text-lg">
+          <motion.p
+            variants={itemVariants}
+            className="text-left text-lg lg:text-xl"
+          >
             At{" "}
             <span className="font-satoshi-bold">Fusion Energy Solutions</span>,
             we specialize in designing, installing, and maintaining cutting-edge
@@ -60,7 +63,10 @@ const VisionSection = () => {
             industrial, and utility-scale projects, we aim to deliver energy
             independence while fostering environmental sustainability.
           </motion.p>
-          <motion.span variants={itemVariants} className="text-left text-lg">
+          <motion.span
+            variants={itemVariants}
+            className="text-left text-lg lg:text-xl"
+          >
             <span className="font-satoshi-bold">Vision: </span>
             <span>
               {" "}
@@ -68,7 +74,10 @@ const VisionSection = () => {
               innovative, affordable, and sustainable solar power solutions.
             </span>
           </motion.span>{" "}
-          <motion.span variants={itemVariants} className="text-left text-lg">
+          <motion.span
+            variants={itemVariants}
+            className="text-left text-lg lg:text-xl"
+          >
             <span className="font-satoshi-bold">Mission: </span>
             <span>
               {" "}

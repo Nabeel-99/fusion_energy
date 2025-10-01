@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/images/logo.jpeg";
 const LargeNavbar = () => {
   return (
     <>
       <div className="hidden lg:flex">
         {" "}
-        <Link to={"/"} className="text-2xl px-6">
-          UFI Solutions
+        <Link to={"/"} className="">
+          <img src={logo} alt="logo" className=" w-16 h-16 object-contain" />
         </Link>
       </div>
       <div className=" gap-6 hidden lg:flex">
@@ -21,12 +21,6 @@ const LargeNavbar = () => {
           <Link to={"/about"}>
             <li>ABOUT</li>
           </Link>
-
-          {/* <li>SERVICES</li>
-          <li>ABOUT</li> */}
-          {/* <li>BLOG</li> */}
-          <li></li>
-          <li></li>
         </ul>
       </div>
       <div className="hidden lg:flex">

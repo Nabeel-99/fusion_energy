@@ -1,6 +1,6 @@
 import React from "react";
 import Solar from "../assets/images/solar.jpg";
-import SolarPng from "../assets/images/solar3.png";
+import SolarPng from "../assets/images/solar3.jpeg";
 import { FaEye } from "react-icons/fa";
 import { GiBullseye } from "react-icons/gi";
 import { GiCheckMark } from "react-icons/gi";
@@ -116,7 +116,7 @@ const About = () => {
           </div>
         </div>
       </FadeInEffect>
-      <div className="relative pt-20 lg:pt-0 w-full ">
+      <div className="relative pt-20 2xl:container 2xl:mx-auto lg:pt-0 w-full ">
         <img
           src={SolarPng}
           alt=""

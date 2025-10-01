@@ -88,7 +88,7 @@ const ExpertiseSection = () => {
             >
               Leading the Way in Solar Technology
             </motion.p>
-            <motion.p variants={itemVariants} className="text-lg">
+            <motion.p variants={itemVariants} className="text-lg lg:text-xl">
               Expert solar solutions, backed by experience and technology. We
               design systems that deliver real results—efficient, reliable, and
               tailored for your needs.

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { GiCheckMark } from "react-icons/gi";
 import { useInView, motion } from "motion/react";
+import chooseBg from "../assets/images/solar2.jpg";
 const ChooseSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-20%" });
@@ -26,28 +27,28 @@ const ChooseSection = () => {
     },
   };
   return (
-    <div className="flex flex-col gap-10 bg-img-choose z-20 relative ">
-      <div className="inset-0 absolute bg-black opacity-60" />
-      <div className="2xl:container 2xl:mx-auto 2xl:overflow-hidden">
+    <div className="flex flex-col gap-10 w-full  relative  py-20">
+      <div className="absolute inset-0">
+        <img src={chooseBg} alt="" className="w-full h-full  object-cover" />
+      </div>
+      <div className="absolute inset-0 bg-black z-0 opacity-60" />
+      <div className="2xl:container 2xl:mx-auto 2xl:overflow-hidden w-full">
         <motion.div
           ref={sectionRef}
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="absolute text-white text-left flex flex-col items-center justify-center   gap-14 pt-22 lg:pt-0 px-10 lg:px-20 h-full   w-full 2xl:w-auto"
+          className="relative z-50 text-white text-left flex flex-col items-center justify-center gap-14 pt-22 lg:pt-0 px-10 lg:px-20 h-full   w-full 2xl:w-auto"
         >
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center gap-10  lg:w-full"
+            className="flex flex-col items-center justify-center gap-10  lg:w-full"
           >
             <p className="font-satoshi-bold text-4xl lg:text-7xl">
               Why Choose Us?
             </p>
             <ul className="text-xl lg:text-3xl px-3 font-satoshi-bold flex flex-col items-start text-left  gap-4">
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={itemVariants}
                 className="flex items-center gap-4"
               >
                 <span>
@@ -56,10 +57,7 @@ const ChooseSection = () => {
                 Expertise
               </motion.li>
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={itemVariants}
                 className="flex items-center gap-4"
               >
                 {" "}
@@ -69,10 +67,7 @@ const ChooseSection = () => {
                 Quality Assurance
               </motion.li>
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.7 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={itemVariants}
                 className="flex items-center gap-4"
               >
                 {" "}
@@ -82,10 +77,7 @@ const ChooseSection = () => {
                 Cost Efficiency
               </motion.li>
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={itemVariants}
                 className="flex items-center gap-4"
               >
                 {" "}
@@ -95,10 +87,7 @@ const ChooseSection = () => {
                 Customer Support
               </motion.li>
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.9 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={itemVariants}
                 className="flex items-center gap-4"
               >
                 {" "}

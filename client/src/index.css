@@ -60,31 +60,6 @@ h1 {
   line-height: 1.1;
 }
 
-.mask-marquee {
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
-}
-.bg-img {
-  background-image: url("./assets/images/solarBG.jpg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 80vh;
-  width: 100%;
-}
-.bg-img-choose {
-  background-image: url("./assets/images/solar2.jpg");
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  height: 80vh;
-  width: 100%;
-}
 @media screen and (min-width: 1536px) {
   .bg-img {
     height: 40vh;

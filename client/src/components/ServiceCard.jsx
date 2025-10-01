@@ -29,12 +29,12 @@ const ServiceCard = ({
           <p>{text2}</p>
         </div>
 
-        <div>
+        <div className="flex justify-start">
           {" "}
           {showLink && (
             <Link
               to={to}
-              className="flex items-center gap-3 border bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 p-2 py-2 text-white rounded-lg border-[#dca26c] w-1/2"
+              className="flex items-center gap-3 border bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 p-2 py-2 text-white rounded-lg border-[#dca26c] w"
             >
               Learn More <FaArrowRight />{" "}
             </Link>

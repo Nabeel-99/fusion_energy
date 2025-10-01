@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-
+import solarBG from "../assets/images/solarBG.jpg";
 const HeroSection = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,16 +23,18 @@ const HeroSection = () => {
     },
   };
   return (
-    <div className="flex flex-col gap-10 bg-img z-0 relative ">
-      <div className="bg-img absolute inset-0" />
-      <div className="inset-0 absolute bg-black opacity-70" />
+    <div className="flex flex-col gap-10 border lg:py-20 z-0 relative ">
+      <div className="absolute inset-0">
+        <img src={solarBG} alt="" className="w-full h-full  object-cover" />
+      </div>
+      <div className="absolute inset-0 bg-black z-0 opacity-80" />
       <motion.div
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className=" 2xl:container  overflow-hidden  2xl:mx-auto"
+        className="relative py-10 2xl:container  overflow-hidden  2xl:mx-auto"
       >
-        <div className="absolute  text-white text-left flex flex-col  gap-6 items-center justify-center lg:items-start lg:justify-start xl:items-center pt-10 lg:pt-20 px-10 lg:px-20 h-full  w-full 2xl:w-auto">
+        <div className="z-50  text-white text-left flex flex-col  gap-6 justify-center  items-center  px-10 lg:px-20 h-full  w-full 2xl:w-auto">
           <motion.p
             variants={itemVariants}
             className="font-satoshi-bold text-5xl lg:text-7xl xl:text-8xl xl:text-center"
@@ -41,7 +43,7 @@ const HeroSection = () => {
           </motion.p>
           <motion.p
             variants={itemVariants}
-            className="lg:w-1/3 xl:text-xl xl:w-2/4 xl:text-center font-satoshi-bold"
+            className=" md:text-center text-white/90 text-lg md:text-2xl font-satoshi-bold xl:max-w-3xl"
           >
             {" "}
             Empowering communities and businesses with innovative solar energy
@@ -50,17 +52,17 @@ const HeroSection = () => {
           </motion.p>
           <motion.div
             variants={itemVariants}
-            className="flex flex-col w-full xl:items-center gap-6 xl:flex-row xl:w-1/3"
+            className="flex flex-col w-full md:items-center justify-center gap-6 md:flex-row max-w-3xl"
           >
             <Link
               to={"/services"}
-              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full lg:w-1/2 text-center rounded-xl"
+              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full  text-center rounded-xl"
             >
               Explore Services
             </Link>
             <Link
               to={"/contact"}
-              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full lg:w-1/2 text-center rounded-xl"
+              className="border border-[#dca26c] p-2 lg:py-4 font-satoshi-bold lg:text-xl bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 text-white w-full  text-center rounded-xl"
             >
               Contact Us
             </Link>

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const ClientsSection = () => {
   return (
-    <div className="bg-[#f0ede77e]  p-10  pb-10 h-full w-full flex flex-col gap-10">
+    <div className="bg-[#f0ede77e]  p-10  pb-20 h-full w-full flex flex-col gap-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
