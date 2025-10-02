@@ -95,7 +95,10 @@ const ContactForm = () => {
       <div>
         <button
           type="submit"
-          className="border text-center flex items-center justify-center p-2 rounded-lg py-4 bg-[#d4863e] hover:bg-[#e1a356] transition duration-300 w-full text-white"
+          disabled={loading}
+          className={`border text-center flex items-center justify-center p-2 rounded-lg py-4 bg-[#d4863e] ${
+            loading ? "" : "hover:bg-[#e1a356]"
+          }  transition duration-300 w-full text-white`}
         >
           {loading ? <FaSpinner className="animate-spin" /> : "Send Message"}
         </button>
