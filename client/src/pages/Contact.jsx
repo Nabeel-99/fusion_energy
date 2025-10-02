@@ -30,8 +30,11 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-col gap-4"
             >
-              <Link className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
-                Email: ufi@gmail.com
+              <Link
+                to="mailto:fusionenergyng@gmail.com"
+                className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg"
+              >
+                Email: fusionenergyng@gmail.com
               </Link>
               <div className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
                 Phone: +234 803 123 4567
