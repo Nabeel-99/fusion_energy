@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   }, [isBurgerMenu]);
   return (
-    <div className="flex 2xl:container 2xl:mx-auto  items-center z-50 justify-between w-full  lg:p-2 lg:px-24">
+    <header className="flex 2xl:container 2xl:mx-auto  items-center z-50 justify-between w-full  lg:p-2 lg:px-24">
       <LargeNavbar />
       <MobileNavbar toggleMenu={toggleMenu} isBurgerMenu={isBurgerMenu} />
       {isBurgerMenu && (
@@ -25,7 +25,7 @@ const Navbar = () => {
           <BurgerMenu closeMenu={closeMenu} />
         </div>
       )}
-    </div>
+    </header>
   );
 };
 

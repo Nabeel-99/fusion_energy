@@ -87,8 +87,11 @@ const Services = () => {
       </FadeInEffect>
       <FadeInEffect translateY={60} delay={0.6}>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 px-6 lg:px-20 2xl:container 2xl:mx-auto">
-          {services.map((service) => (
-            <div className="border border-[#d6d5d5] shadow-md bg-white rounded-xl p-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="border border-[#d6d5d5] shadow-md bg-white rounded-xl p-6"
+            >
               <ServiceCard
                 icon={service.icon}
                 text={service.title}
