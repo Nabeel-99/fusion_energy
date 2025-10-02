@@ -34,7 +34,7 @@ const HeroSection = () => {
         variants={containerVariants}
         className="relative py-10 2xl:container  overflow-hidden  2xl:mx-auto"
       >
-        <div className="z-50  text-white text-left flex flex-col  gap-6 justify-center  items-center  px-10 lg:px-20 h-full  w-full 2xl:w-auto">
+        <div className="z-40  text-white text-left flex flex-col  gap-6 justify-center  items-center  px-10 lg:px-20 h-full  w-full 2xl:w-auto">
           <motion.p
             variants={itemVariants}
             className="font-satoshi-bold text-5xl lg:text-7xl xl:text-8xl xl:text-center"

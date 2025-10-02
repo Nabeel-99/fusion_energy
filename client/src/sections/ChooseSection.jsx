@@ -37,7 +37,7 @@ const ChooseSection = () => {
           ref={sectionRef}
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="relative z-50 text-white text-left flex flex-col items-center justify-center gap-14 pt-22 lg:pt-0 px-10 lg:px-20 h-full   w-full 2xl:w-auto"
+          className="relative z-40 text-white text-left flex flex-col items-center justify-center gap-14 pt-22 lg:pt-0 px-10 lg:px-20 h-full   w-full 2xl:w-auto"
         >
           <motion.div
             variants={itemVariants}
