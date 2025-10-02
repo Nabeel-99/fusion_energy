@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaSpinner } from "react-icons/fa";
 import { toast } from "sonner";
-const BACKENDPORT = "http://localhost:3000";
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://fusion-energy-api.vercel.app";
 const ContactForm = () => {
   const [data, setData] = useState({
     fullname: "",

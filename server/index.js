@@ -22,10 +22,6 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-    console.log("works")
-    return res.status(200).json({message: "Working.."})
-})
 app.post("/api/send-email", async (req, res) => {
   try {
     const { fullname, email, phone, message } = req.body;
