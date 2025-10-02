@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaSpinner } from "react-icons/fa";
 import { toast } from "sonner";
-const BASE_URL =
+const BACKEND_PORT =
   window.location.hostname === "localhost"
     ? "http://localhost:3000"
     : "https://fusion-energy-api.vercel.app";
@@ -22,7 +22,7 @@ const ContactForm = () => {
     }
     setLoading(true);
     try {
-      const res = await axios.post(`${BACKENDPORT}/api/send-email`, {
+      const res = await axios.post(`${BACKEND_PORT}/api/send-email`, {
         fullname: data.fullname,
         email: data.email,
         phone: data.phone,
