@@ -28,7 +28,6 @@ const ContactForm = () => {
         phone: data.phone,
         message: data.message,
       });
-      console.log("res", res);
       if (res.status === 200) {
         setData({
           fullname: "",

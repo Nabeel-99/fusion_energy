@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.jpeg";
 const MobileNavbar = ({ toggleMenu, isBurgerMenu }) => {
   return (
-    <div className="flex items-center px-4 lg:hidden backdrop-blur-3xl z-50 pb-2 bg-white justify-between w-full  fixed left-0 right-0 top-0 pt-4">
+    <div className="flex items-center px-4 lg:hidden backdrop-blur-3xl z-50  bg-white justify-between w-full  fixed left-0 right-0 top-0  p-2">
       <Link to={"/"} className="">
         <img src={logo} alt="logo" className=" w-12 h-12 object-contain" />
       </Link>
