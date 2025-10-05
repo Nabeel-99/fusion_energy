@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col items-start lg:items-baseline  font-satoshi-bold gap-10">
+        <div className="flex lg:flex-row flex-col items-start lg:items-baseline  font-satoshi-bold gap-10 lg:gap-20">
           <div className="flex flex-col gap-2">
             <span className="pb-4">Quick Links</span>
             <ul className="flex flex-col gap-2">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="pb-4">Contact Us</div>
+            <div className="pb-4">Contact</div>
 
             <Link
               to={"mailto:fusionenergyng@gmail.com"}
@@ -67,16 +67,18 @@ const Footer = () => {
             >
               Email: fusionenergyng@gmail.com
             </Link>
-            <div>Phone: +234 803 123 4567</div>
+            <Link to={"tel:+2349019907977"}>Phone: +234 901 990 7977</Link>
             <div>Address: Wuse 2, Abuja.</div>
 
             <Link
-              to={"https://instagram.com/fusionenergy"}
+              to={"https://www.instagram.com/fusionenergy_ltd"}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit our Instagram"
+              className="flex items-center gap-1"
             >
               <FaInstagram className="text-3xl" aria-hidden="true" />
+              <span>@fusionenergy_ltd</span>
             </Link>
           </div>
         </div>

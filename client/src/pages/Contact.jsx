@@ -36,14 +36,24 @@ const Contact = () => {
               >
                 Email: fusionenergyng@gmail.com
               </Link>
-              <div className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
-                Phone: +234 803 123 4567
-              </div>
+              <Link
+                to="tel:+2349019907977"
+                className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg"
+              >
+                Phone: +234 901 990 7977
+              </Link>
               <div className="border p-4 bg-[#d4863e] font-satoshi-bold text-white border-[#d4863e] rounded-lg">
                 Address: Wuse 2, Abuja.
               </div>
-              <Link>
+              <Link
+                to={"https://www.instagram.com/fusionenergy_ltd"}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Instagram"
+                className="flex items-center gap-1"
+              >
                 <FaInstagram className="text-3xl text-pink-700" />
+                <span className="font-medium">@fusionenergy_ltd</span>
               </Link>
             </motion.div>
           </div>
